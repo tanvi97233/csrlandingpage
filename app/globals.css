@@ -1,5 +1,5 @@
-@import "tailwindcss";
-@import "tw-animate-css";
+@import "../node_modules/tailwindcss/index.css";
+@import "../node_modules/tw-animate-css/dist/tw-animate.css";
 @import "../vendor/shadcn-tailwind-4.13.0.css";
 :root{--forest:#073f2d;--forest2:#0b563c;--green:#079665;--mint:#dff7eb;--ink:#0e2037;--muted:#687386;--warm:#f7f8f5;--line:#dde4df}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}.shell{width:min(1180px,calc(100% - 48px));margin:auto}.section{padding-block:104px}
