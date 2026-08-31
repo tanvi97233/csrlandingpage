@@ -1,0 +1,2 @@
+import { ArrowLeft, Leaf } from "lucide-react";
+export default function AppEntry(){return <main className="app-entry"><section><span><Leaf/></span><h1>Application entry point</h1><p>This route is ready to connect to the DaanVeda ImpactOS application created in Figma. Replace this page with the application build or redirect it to the final application URL.</p><a href="/"><ArrowLeft/> Back to landing page</a></section></main>}
