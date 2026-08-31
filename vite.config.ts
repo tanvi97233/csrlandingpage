@@ -1,4 +1,5 @@
 import vinext from "vinext";
+import { nitro } from "nitro/vite";
 import { defineConfig } from "vite";
 import hostingConfig from "./.openai/hosting.json";
 import { sites } from "./build/sites-vite-plugin";
@@ -53,6 +54,8 @@ export default defineConfig(async () => {
     },
     plugins: [
       vinext(),
+      // Nitro detects Vercel during CI and emits its Build Output API bundle.
+      nitro(),
       sites(),
       cloudflare({
         viteEnvironment: { name: "rsc", childEnvironments: ["ssr"] },
